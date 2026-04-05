@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Be-You-Tiful Magazine</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Quintessential&family=Nunito:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Nunito', sans-serif;
+      background: linear-gradient(to bottom, #fff3cf, #ffffff);
+    }
+
+    .brand {
+      color: rgb(249, 72, 161);
+      font-weight: 600;
+    }
+
+    h1, h2 {
+      font-family: 'Quintessential', serif;
+    }
+
+    /* Navbar hover effect */
+    .nav-link:hover {
+      color: rgb(249, 72, 161) !important;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
+  <div class="container">
+    <a class="navbar-brand brand" href="#">Be-You-Tiful! Magazine</a>
+
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#topnews">Top News</a></li>
+        <li class="nav-item"><a class="nav-link" href="#issue">Issue</a></li>
+        <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="#subscribe">Subscribe</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Subtitle -->
+<section class="text-center p-5">
+  <h1 class="display-4 brand">Be Stylish, Be You!</h1>
+  <p class="lead">
+    From the latest trends to vintage revivals, find your inner style with Be-You-Tiful! Magazine
+  </p>
+</section>
+
+<!-- TOP NEWS -->
+<section id="topnews" class="container text-center mb-5">
+  <h2>Top News</h2>
+  <p>
+    Confidence is key!
+    This month's issue of Be-You-Tiful! explores how to feel your best in every outfit.
+    From retro futurism to cottage core, discover how to build a style that reflects who you are.
+
+    Order Now and get 25% off your first subscription!
+  </p>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" class="container mb-5">
+  <h2 class="text-center mb-4">Trending Looks</h2>
+  <div class="row g-3">
+    <div class="col-md-4">
+      <img src="images/look1.jpg" class="img-fluid rounded" alt="Look 1">
+    </div>
+    <div class="col-md-4">
+      <img src="images/look2.jpg" class="img-fluid rounded" alt="Look 2">
+    </div>
+    <div class="col-md-4">
+      <img src="images/look3.jpg" class="img-fluid rounded" alt="Look 3">
+    </div>
+  </div>
+</section>
+
+<!-- ISSUE -->
+<section id="issue" class="container mb-5 p-4 rounded" style="background-color: #fde3ee;">
+  <h2 class="text-center mb-3">Current Issue: Picnic Chic</h2>
+  
+  <p class="ps-3">
+    This month's issue celebrates the essence of summer-inspired fashion. From flowy dresses to straw hats, discover how to create the perfect picnic look that combines comfort and style. 
+    Which look is your favorite? Let us know on our social media pages!
+  </p>
+
+  <p class="ps-3">
+    Take this quiz to find out which summer accessory matches your personality! Pick your favorite options below and see if you’re a playful sunhat, a chic basket bag, or a stylish pair of sunglasses.
+  </p>
+
+  <form class="row g-3 mt-3">
+    <div class="col-md-4">
+      <label class="form-label">Pick your favorite color palette:</label>
+      <select class="form-select">
+        <option selected>Choose one</option>
+        <option>Bright & bold</option>
+        <option>Soft pastels</option>
+        <option>Earthy & neutral</option>
+      </select>
+    </div>
+
+    <div class="col-md-4">
+      <label class="form-label">Weekend activity:</label>
+      <select class="form-select">
+        <option selected>Choose one</option>
+        <option>Spa day</option>
+        <option>Movie marathon</option>
+        <option>Beach day</option>
+      </select>
+    </div>
+
+    <div class="col-md-4">
+      <label class="form-label">Must-have accessory:</label>
+      <select class="form-select">
+        <option selected>Choose one</option>
+        <option>Chic sunglasses</option>
+        <option>Themed earrings</option>
+        <option>Cool hats</option>
+      </select>
+    </div>
+
+    <div class="col-12 text-center mt-3">
+      <button class="btn px-5" style="background-color: rgb(249, 72, 161); color: white;">See Your Accessory Match</button>
+    </div>
+  </form>
+</section>
+  </p>
+</section>
+
+<!-- SUBSCRIBE -->
+<section id="subscribe" class="container mb-5">
+  <h2 class="text-center mb-4">Subscribe</h2>
+
+  <form class="row g-3">
+    <div class="col-md-6">
+      <input type="text" class="form-control" placeholder="First Name">
+    </div>
+
+    <div class="col-md-6">
+      <input type="text" class="form-control" placeholder="Last Name">
+    </div>
+
+    <div class="col-12">
+      <input type="email" class="form-control" placeholder="Email">
+    </div>
+
+    <div class="col-12">
+      <label class="form-label">Subscription Type</label>
+
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="type">
+        <label class="form-check-label">Digital</label>
+      </div>
+
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="type">
+        <label class="form-check-label">Print</label>
+      </div>
+    </div>
+
+    <div class="col-12">
+      <input type="text" class="form-control" placeholder="Credit Card Number">
+    </div>
+
+    <div class="col-12">
+      <select class="form-select">
+        <option selected>Select Card Type</option>
+        <option>Mastercard</option>
+        <option>Visa</option>
+        <option>American Express</option>
+      </select>
+    </div>
+
+    <div class="col-12 text-center">
+      <button class="btn px-5" style="background-color: rgb(249, 72, 161); color: white;">Submit</button>
+    </div>
+  </form>
+</section>
+
+<!-- FOOTER -->
+<footer id="contact" class="bg-dark text-white text-center p-4">
+  <p>Follow Us Here!</p>
+  <div class="d-flex justify-content-center gap-2">
+    <i class="bi bi-facebook fs-4"></i>
+    <i class="bi bi-twitter fs-4"></i>
+    <i class="bi bi-instagram fs-4"></i>
+    
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
