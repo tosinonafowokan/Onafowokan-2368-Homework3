@@ -33,6 +33,27 @@
     .nav-link:hover {
       color: rgb(249, 72, 161) !important;
     }
+
+  html {
+  scroll-padding-top: 80px;
+  scroll-behavior: smooth;
+}
+.gallery-img {
+  height: 250px;                 
+  object-fit: cover;             
+  border: 3px solid rgb(249, 72, 161); 
+  transition: transform 0.3s ease-in-out;
+}
+.gallery-img:hover {
+  transform: scale(1.05);
+}
+
+.row.d-flex.align-items-stretch .col-md-4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+    
   </style>
 </head>
 
@@ -79,24 +100,8 @@
   </p>
 </section>
 
-<!-- GALLERY -->
-<section id="gallery" class="container mb-5">
-  <h2 class="text-center mb-4">Trending Looks</h2>
-  <div class="row g-3">
-    <div class="col-md-4">
-      <img src="images/look1.jpg" class="img-fluid rounded" alt="Look 1">
-    </div>
-    <div class="col-md-4">
-      <img src="images/look2.jpg" class="img-fluid rounded" alt="Look 2">
-    </div>
-    <div class="col-md-4">
-      <img src="images/look3.jpg" class="img-fluid rounded" alt="Look 3">
-    </div>
-  </div>
-</section>
-
 <!-- ISSUE -->
-<section id="issue" class="container mb-5 p-4 rounded" style="background-color: #fde3ee;">
+<section id="issue" class="container mb-5 p-4 rounded" style="background-color: #f7eaef;">
   <h2 class="text-center mb-3">Current Issue: Picnic Chic</h2>
   
   <p class="ps-3">
@@ -144,8 +149,34 @@
     </div>
   </form>
 </section>
-  </p>
+
+
+<!-- GALLERY -->
+<section id="gallery" class="container mb-5">
+  <h2 class="text-center mb-4">Trending Looks</h2>
+  <div class="row g-3">
+
+    <div class="col-md-4 d-flex">
+      <img src="https://tampamagazines.com/wp-content/uploads/2022/04/3-1024x1024.png"
+           class="img-fluid gallery-img rounded shadow-sm mx-auto"
+           alt="Trend Image 1">
+    </div>
+
+    <div class="col-md-4 d-flex">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxQCeR4oGVkEMDdz1dP64hm7WtmXy1e_6yNQ&s"
+           class="img-fluid gallery-img rounded shadow-sm mx-auto"
+           alt="Trend Image 2">
+    </div>
+
+    <div class="col-md-4 d-flex">
+      <img src="https://www.one4all.com/media/wysiwyg/summer_accessories_600x400.png"
+           class="img-fluid gallery-img rounded shadow-sm mx-auto"
+           alt="Trend Image 3">
+    </div>
+
+  </div>
 </section>
+
 
 <!-- SUBSCRIBE -->
 <section id="subscribe" class="container mb-5">
